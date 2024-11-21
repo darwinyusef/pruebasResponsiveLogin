@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(120deg, rgb(163, 1, 12) 0%, rgba(84, 2, 2, 1) 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.azul {
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    /* 3px (Horinzontal) | 3px (Vertical) | 22px Blur Radius (disperción) | -7 px Spread ( solidez ) */
+    box-shadow: 3px 3px 22px -7px rgba(0, 0, 0, 0.75);
+}
+
+.verde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+    padding: 20% 10%;
+    /*Arriba e Izqierda*/
+}
+
+.verde h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.naranja>.header>h1 {
+    color: #6d0106;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.naranja>.header {
+    margin-bottom: 35px;
+}
+
+.naranja .body>.negro {
+    width: clamp(250px, 100vw, 350px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.email,
+.password {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.body>.negro input {
+    width: 100%;
+    font-size: 20px;
+    padding: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid #6d0106;
+    border-radius: 10px;
+}
+
+
+input::placeholder {
+    color: #6d0106 !important;
+}
+
+.naranja .header_error {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.naranja .input_error {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+    display: none;
+}
+
+.naranja .forgot a {
+    color: red;
+    font-size: 16px;
+    text-decoration: none;
+}
